@@ -1,0 +1,161 @@
+.btn-zip-code-based-price {
+	cursor: pointer;
+	color: #fff !important;
+	padding: 6px 10px !important;
+	display: inline-block !important;
+	border: none !important;
+	outline: none !important;
+	background-color: #333 !important;
+	text-decoration: none !important;
+	transition: all 200ms !important;
+}
+
+#zip-code-based-product-price-location-popup,
+#zip-code-based-product-price-location-popup * {
+	box-sizing: border-box;
+}
+
+#zip-code-based-product-price-location-popup {
+	inset: 0;
+	padding: 30px;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	z-index: 99999;
+	pointer-events: none;
+	visibility: hidden;
+	transition: all 200ms;
+}
+
+#zip-code-based-product-price-location-popup.opened {
+	opacity: 1;
+	pointer-events: all;
+	visibility: visible;
+}
+
+#zip-code-based-product-price-location-popup:before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#zip-code-based-product-price-location-popup form {
+	width: 350px;
+	padding: 30px;
+	position: relative;
+	z-index: 4;
+	font-size: 16px;
+	padding-top: 45px;
+	border-radius: 4px;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+
+#zip-code-based-product-price-location-popup .message-box {
+	color: #fff;
+	padding: 3px 10px;
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 10px;
+	background-color: #ff5757;
+	border: 1px solid red;
+}
+
+#zip-code-based-product-price-location-popup .message-box:empty {
+	display: none;
+}
+
+#zip-code-based-product-price-location-popup p {
+	margin: 0;
+}
+
+#zip-code-based-product-price-location-popup .field-row {
+	margin-bottom: 20px;
+}
+
+#zip-code-based-product-price-location-popup .field-row .field-guide {
+	font-size: 14px;
+	font-style: italic;
+}
+
+#zip-code-based-product-price-location-popup .btn-close-popup {
+	position: absolute;
+	top: 5px;
+	width: 18px;
+	inset-inline-end: 5px;
+	aspect-ratio: 1 / 1;
+	transition: all 200ms;
+	background: url(../images/icon-close.svg) no-repeat center;
+}
+
+#zip-code-based-product-price-location-popup .btn-close-popup:hover {
+	opacity: 0.8;
+}
+
+#zip-code-based-product-price-location-popup :is([type="text"], [type="number"], [type="email"], select, textarea) {
+	padding: 10px 12px;
+	display: block;
+	width: 100%;
+	outline: none !important;
+	border: 1px solid #c3c4c7;
+}
+
+#zip-code-based-product-price-location-popup footer {
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#zip-code-based-product-price-location-popup [type="submit"] {
+	padding: 8px 20px !important;
+}
+
+#zip-code-based-product-price-location-popup [type="submit"]:disabled {
+	opacity: 0.7;
+}
+
+#zip-code-based-product-price-location-widget,
+#zip-code-based-product-price-location-widget * {
+	box-sizing: border-box;
+}
+
+#zip-code-based-product-price-location-widget {
+	padding: 15px;
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	font-size: 13px;
+	line-height: 1.2;
+	max-width: 220px;
+	z-index: 1000;
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+#zip-code-based-product-price-location-widget p {
+	margin-block: 0 10px;
+}
+
+#zip-code-based-product-price-location-widget .btn-close-widget {
+	--offset: -3px;
+	position: absolute;
+	top: var(--offset);
+	width: 15px;
+	aspect-ratio: 1 / 1;
+	inset-inline-end: var(--offset);
+	background: url(../images/icon-close.svg) no-repeat center;
+	border-radius: 100px;
+}
+
+.woocommerce-checkout #shipping_country[readonly]+span.select2,
+.woocommerce-checkout #billing_country[readonly]+span.select2,
+.woocommerce-checkout #billing_postcode[readonly],
+.woocommerce-checkout #shipping_postcode[readonly] {
+	pointer-events: none;
+	opacity: 0.8;
+}

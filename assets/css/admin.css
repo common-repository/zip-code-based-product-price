@@ -1,0 +1,244 @@
+:root {
+	--primary_color: #4C2DC1
+}
+
+.zip-code-base-product-price-enable-checkbox {
+	color: #fff !important;
+	font-family: dashicons;
+	font-size: 20px !important;
+	min-width: 0px !important;
+	width: 20px !important;
+	height: 20px !important;
+	border-radius: 100px !important;
+	outline: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	position: relative;
+	background-color: #cf0202 !important;
+}
+
+.zip-code-base-product-price-enable-checkbox:before {
+	content: "\f335" !important;
+	position: absolute !important;
+	top: 50% !important;
+	left: 50% !important;
+	width: auto !important;
+	height: auto !important;
+	margin: 0 0 0 -0.5px !important;
+	transform: translate(-50%, -50%) !important;
+}
+
+.zip-code-base-product-price-enable-checkbox:checked {
+	background-color: #4caf50 !important;
+}
+
+.zip-code-base-product-price-enable-checkbox:checked::before {
+	content: "\f147" !important;
+	margin: 0 0 0 -1px !important;
+}
+
+table.table-zip-code-based-pricing {
+	border-collapse: collapse;
+}
+
+table.table-zip-code-based-pricing {
+	--border_color: #c3c4c7;
+	border-top: 1px solid var(--border_color) !important;
+}
+
+table.table-zip-code-based-pricing tbody td {
+	padding: 0 !important;
+	position: relative;
+	border: 1px solid var(--border_color) !important;
+}
+
+table.table-zip-code-based-pricing tfoot td {
+	padding: 10px !important;
+}
+
+table.table-zip-code-based-pricing tbody :is([type="text"], textarea) {
+	line-height: 40px;
+	width: 100% !important;
+	min-width: 0 !important;
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+	padding-block: 0 !important;
+	background-color: transparent !important;
+}
+
+table.table-zip-code-based-pricing tbody :is([type="text"], textarea)::placeholder {
+	color: #c4c4c4;
+}
+
+table.table-zip-code-based-pricing .has-padding {
+	padding: 8px 10px !important;
+}
+
+table.table-zip-code-based-pricing .column-country-code {
+	width: 120px;
+}
+
+table.table-zip-code-based-pricing .woocommerce-help-tip {
+	position: relative;
+	top: -2px;
+	margin-left: 5px;
+}
+
+table.table-zip-code-based-pricing :is(.column-regular-price, .column-sale-price) {
+	width: 100px;
+}
+
+table.table-zip-code-based-pricing .column-sortable {
+	width: 20px;
+	text-align: center;
+}
+
+table.table-zip-code-based-pricing .column-sortable .sortable-handle {
+	padding: 10px;
+	cursor: move;
+}
+
+table.table-zip-code-based-pricing .column-enabled {
+	width: 25px;
+	text-align: center;
+}
+
+table.table-zip-code-based-pricing .column-enabled .woocommerce-help-tip {
+	margin: 0 0 0 -1px !important;
+}
+
+table.table-zip-code-based-pricing .column-action {
+	width: 1%
+}
+
+table.table-zip-code-based-pricing .row-action-items {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+}
+
+table.table-zip-code-based-pricing .row-action-items a {
+	color: #747474;
+	box-shadow: none !important;
+	transition: all 200ms;
+}
+
+table.table-zip-code-based-pricing .row-action-items a:hover {
+	color: #333;
+}
+
+table.table-zip-code-based-pricing tr.sortable-chosen td {
+	background-color: bisque;
+}
+
+.zip-code-based-pricing-box {
+	margin-block: 30px;
+	background-color: #fff;
+	box-shadow: 2px 0 #e6e6e6;
+	border-radius: 5px;
+}
+
+.zip-code-based-pricing-header {
+	display: flex;
+	padding: 15px 30px;
+	align-items: center;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.zip-code-based-pricing-header :is(h1, h2, h3) {
+	margin: 0;
+}
+
+.zip-code-based-pricing-body {
+	padding: 15px 30px;
+}
+
+.zip-code-based-pricing-box table.form-table {
+	margin-top: 0;
+}
+
+.zip-code-based-pricing-box table.form-table th {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+
+.zip-code-based-pricing-box table.form-table td {
+	vertical-align: top;
+}
+
+.zip-code-based-pricing-box .no-label-description {
+	margin-top: 14px;
+	display: inline-block;
+}
+
+.zip-code-based-pricing-box .field-label-description,
+.zip-code-based-pricing-box .field-note {
+	color: #a1a1a1;
+	font-size: 13px;
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.zip-code-based-pricing-toggle {
+	display: inline-flex;
+	overflow: hidden;
+	border-radius: 5px !important;
+}
+
+.zip-code-based-pricing-toggle input {
+	width: auto;
+	height: auto;
+	appearance: none;
+	margin: 0 !important;
+	border: none !important;
+	outline: none !important;
+	line-height: 1 !important;
+	box-shadow: none !important;
+	padding: 10px 15px !important;
+	background-color: #f8f8f8;
+	border-radius: 0 !important;
+}
+
+.zip-code-based-pricing-toggle input:before {
+	line-height: 1 !important;
+	width: auto !important;
+	height: auto !important;
+	margin: 0 !important;
+	float: none !important;
+	content: attr(data-label) !important;
+	background: transparent !important;
+}
+
+.zip-code-based-pricing-toggle input:checked {
+	color: #fff;
+	background-color: var(--primary_color)
+}
+
+.zip-code-based-pricing-box :is([type="text"], [type="number"], [type="email"], textarea):not(.wp-color-picker) {
+	margin: 0;
+	width: min(500px, 95%);
+	font-size: 15px;
+	padding: 3px 14px;
+	outline: none !important;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.zip-code-based-pricing-box :is([type="text"], [type="number"], [type="email"], textarea):focus {
+	outline: none;
+	border-color: var(--primary_color);
+	box-shadow: 0 0 4px var(--primary_color)
+}
+
+.wrap-zip-code-based-product-price .form-footer {
+	display: flex;
+	gap: 10px;
+}
+
+.wrap-zip-code-based-product-price .form-footer .button-reset {
+	order: -1;
+}
